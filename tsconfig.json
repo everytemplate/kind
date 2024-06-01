@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "noLib": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@getpre/kind-as/std/types"],
+    "types": ["assembly"]
+  },
+  "include": ["assembly/*.ts"]
+}

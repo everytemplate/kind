@@ -1,0 +1,13 @@
+{
+  "name": "gm-kind",
+  "description": "A starter template for developing Kind contracts with AssemblyScript",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "kasc assembly/index.ts -o build/index.wasm -t build/index.wat"
+  },
+  "dependencies": {
+    "@getpre/kind-as": "^0.0.1"
+  }
+}
