@@ -4,6 +4,9 @@
   "version": "0.1.0",
   "type": "module",
   "license": "MIT",
+  "bun-create": {
+    "start": "bun run build"
+  },
   "scripts": {
     "build": "kasc assembly/index.ts -o build/index.wasm -t build/index.wat"
   },
