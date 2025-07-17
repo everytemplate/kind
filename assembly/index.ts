@@ -1,13 +1,17 @@
 @kind
-class GmKind {
+class Thing {
   image!: Bytes32;
-  desc!: Bytes32;
+  description!: Bytes32;
 
   meta(): Json {
-    let data = json.create("{}");
-    json.setString(data, "/name", "Gm!");
-    json.setString(data, "/description", "Greeting from your first kind");
-    return data;
+    let metadata = json.create("{}");
+    json.setString(metadata, "/name", `Thing #${object.id}`);
+    json.setString(
+      metadata,
+      "/description",
+      "An object minted from a set using the Thing kind. Source: github.com/everytemplate/kind"
+    );
+    return metadata;
   }
 
   picture(): Image {

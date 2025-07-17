@@ -8,6 +8,6 @@
     "build": "kasc assembly/index.ts -o build/index.wasm -t build/index.wat"
   },
   "dependencies": {
-    "@getpre/kind-as": "^0.0.1"
+    "@everyprotocol/kind-as": "^0.1.1"
   }
 }
